@@ -13,8 +13,8 @@ function gerarCodigoQr() {
         
         var qrcode = new QRCode(box, {
             text: linkInput,
-            width: 300,
-            height: 300,
+            width: 200,
+            height: 200,
         });
 
         setTimeout(() => {
