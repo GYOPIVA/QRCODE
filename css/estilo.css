@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+.conteiner {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 30px;
+
+    & .content {
+        width: 456px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        & .title {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: #2f3f57;
+
+        }
+
+        & input {
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #00000080;
+            font-size: 24px;
+        }
+
+        & button {
+            width: 185px;
+            padding: 20px;
+            background-color: #2f3f57;
+            border-radius: 100px;
+            color: #e6e6e6;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    .qr-code {
+        display: none;
+
+        & .box {
+            padding: 50px;
+            border: 1px solid #414141;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+
+        & a {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #2f3f57;
+            border-radius: 100px;
+            color: #e6e6e6;
+            border: none;
+            text-decoration: none;
+
+        }
+
+    }
+
+    & .display-hidden {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    img {
+        width: 150px;
+    }
+
+    .box {
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+
+    .content {
+        width: 200px;
+
+
+        & .title {
+            width: 250px;
+
+            & h1 {
+                font-size: 15px;
+            }
+        }
+
+        & #campo-qr {
+            padding: 10px;
+            width: 250px;
+            font-size: 15px;
+        }
+    }
+
+    #gerar-qr {
+        padding: 10px;
+        width: 250px;
+    }
+
+    .conteiner {
+        width: 350px;
+    }
+
+    #download {
+        padding: 10px;
+    }
+}
